@@ -13,11 +13,11 @@
     <parent>
         <groupId>io.atlasmap</groupId>
         <artifactId>atlas</artifactId>
-        <version>1.19.0</version>
+        <version>1.19.0.fuse-000001</version>
     </parent>
 
     <artifactId>camel-atlasmap</artifactId>
-    <version>1.19.0-SNAPSHOT</version>
+    <version>1.19.0.fuse-000001</version>
     <packaging>jar</packaging>
     <name>Camel :: AtlasMap</name>
     <description>Camel AtlasMap support</description>
@@ -25,9 +25,9 @@
         <camel.osgi.import.before.defaults>com.sun.xml.bind.marshaller;resolution:=optional</camel.osgi.import.before.defaults>
         <camel.osgi.export.pkg>org.apache.camel.converter.atlasmap.*</camel.osgi.export.pkg>
         <camel.osgi.export.service>org.apache.camel.spi.DataFormatResolver;dataformat=atlasmap</camel.osgi.export.service>
-        <atlas.version>1.19.0</atlas.version>
+        <atlas.version>1.19.0.fuse-000001</atlas.version>
         <camel.version>2.19.0</camel.version>
-        <ipaas.connector.version>0.3.2</ipaas.connector.version>
+        <ipaas.connector.version>0.4.0.fuse-000006</ipaas.connector.version>
         <jaxb.version>2.2.11</jaxb.version>
         <junit.version>4.12</junit.version>
         <log4j.version>2.8.1</log4j.version>
@@ -52,6 +52,17 @@
         <developerConnection>scm:git:git@github.com:atlasmap/camel-atlasmap.git</developerConnection>
       <tag>HEAD</tag>
   </scm>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -137,13 +148,13 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.redhat.ipaas</groupId>
+            <groupId>io.syndesis</groupId>
             <artifactId>twitter-mention-connector</artifactId>
             <version>${ipaas.connector.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.redhat.ipaas</groupId>
+            <groupId>io.syndesis</groupId>
             <artifactId>salesforce-upsert-contact-connector</artifactId>
             <version>${ipaas.connector.version}</version>
             <scope>test</scope>
