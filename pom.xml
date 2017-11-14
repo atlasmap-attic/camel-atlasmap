@@ -13,12 +13,12 @@
     <parent>
         <groupId>io.atlasmap</groupId>
         <artifactId>atlas</artifactId>
-        <version>1.31.2</version>
+        <version>1.32.0.fuse-000008</version>
     </parent>
 
     <groupId>io.atlasmap</groupId>
     <artifactId>camel-atlasmap</artifactId>
-    <version>1.32-SNAPSHOT</version>
+    <version>1.32.0.fuse-000007</version>
     <packaging>jar</packaging>
     <name>Camel :: AtlasMap</name>
     <description>Camel AtlasMap support</description>
@@ -26,8 +26,8 @@
         <camel.osgi.import.before.defaults>com.sun.xml.bind.marshaller;resolution:=optional</camel.osgi.import.before.defaults>
         <camel.osgi.export.pkg>org.apache.camel.converter.atlasmap.*</camel.osgi.export.pkg>
         <camel.osgi.export.service>org.apache.camel.spi.DataFormatResolver;dataformat=atlasmap</camel.osgi.export.service>
-        <atlas.version>1.31.2</atlas.version>
-        <camel.version>2.20.0</camel.version>
+        <atlas.version>1.32.0.fuse-000008</atlas.version>
+        <camel.version>2.20.0.fuse-000120</camel.version>
         <jacoco-maven-plugin.version>0.7.9</jacoco-maven-plugin.version>
         <jaxb.version>2.2.11</jaxb.version>
         <junit.version>4.12</junit.version>
